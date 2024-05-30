@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Каталог туров</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>Добро пожаловать на туристический портал Кыргызстана!</h1>
+				<nav></nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="header-search-in-search">
+				<div id="header-modal">
+					<h1 class="modal-click">
+						<ion-icon name="reorder-three-outline"></ion-icon>
+						<span> категория </span>
+					</h1>
+					<h1 class="modal-close">
+						<ion-icon name="close-outline"></ion-icon>
+					</h1>
+					<div class="header-navs">
+						<div style="margin-top: 0.1pc" class="header-modal">
+							<h4><a href="./index.html">Главная</a></h4>
+							<h4><a href="./katalog.html">Каталог туров</a></h4>
+							<h4><a href="./struny.html">Куда поехать?</a></h4>
+							<h4><a href="./agent.html">Услуги туристических агентств</a></h4>
+							<h4><a href="./map.html">Описание маршрутов</a></h4>
+							<h4><a href="./iscus.html">Путеводители и инструкторы</a></h4>
+							<h4><a href="./sovet.html">Статьи и советы</a></h4>
+							<h4><a href="./contact.html">Контакты</a></h4>
+							<h4><a href="./otzuv.html">Отзывы</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="search-container">
+					<input type="text" class="search-input" placeholder="Поиск..." />
+					<button class="search-button">🔍</button>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="filters">
+			<h1>Каталог туров</h1>
+			<h2>Фильтры</h2>
+			<label for="type-filter">Тип:</label>
+			<select id="type-filter">
+				<option value="all">Все</option>
+				<option value="горные походы">Горные походы</option>
+				<option value="конные прогулки">Конные прогулки</option>
+				<option value="пешие маршруты">Пешие маршруты</option>
+				<option value="экскурсии">Экскурсии</option>
+			</select>
+			<label for="difficulty-filter">Сложность:</label>
+			<select id="difficulty-filter">
+				<option value="all">Любая</option>
+				<option value="легкая">Легкая</option>
+				<option value="средняя">Средняя</option>
+				<option value="сложная">Сложная</option>
+			</select>
+		</div>
+		<div class="container" id="tours-list">
+			<div class="tour">
+				<h3>Горный поход "Эверест"</h3>
+				<p><strong>Тип:</strong> Горные походы</p>
+				<p><strong>Сложность:</strong> Сложная</p>
+				<p><strong>Продолжительность:</strong> 10 дней</p>
+				<p><strong>Сезон:</strong> весна-лето</p>
+			</div>
+			<div class="tour">
+				<h3>Экскурсия по Парижу</h3>
+				<p><strong>Тип:</strong> Экскурсии</p>
+				<p><strong>Сложность:</strong> Легкая</p>
+				<p><strong>Продолжительность:</strong> 1 день</p>
+				<p><strong>Сезон:</strong> круглогодично</p>
+			</div>
+			<!-- Добавьте остальные туры -->
+		</div>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<script src="./app.js"></script>
+	</body>
+</html>

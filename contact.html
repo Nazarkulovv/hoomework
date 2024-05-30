@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Контакты и обратная связь</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+	<header>
+			<div class="container">
+				<h1>Добро пожаловать на туристический портал Кыргызстана!</h1>
+				<nav></nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="header-search-in-search">
+				<div id="header-modal">
+					<h1 class="modal-click">
+						<ion-icon name="reorder-three-outline"></ion-icon>
+						<span> категория </span>
+					</h1>
+					<h1 class="modal-close">
+						<ion-icon name="close-outline"></ion-icon>
+					</h1>
+					<div class="header-navs">
+						<div style="margin-top: 0.1pc" class="header-modal">
+						<h4><a href="./index.html">Главная</a></h4>
+							<h4><a href="./katalog.html">Каталог туров</a></h4>
+							<h4><a href="./struny.html">Куда поехать?</a></h4>
+							<h4><a href="./agent.html">Услуги туристических агентств</a></h4>
+							<h4><a href="./map.html">Описание маршрутов</a></h4>
+							<h4><a href="./iscus.html">Путеводители и инструкторы</a></h4>
+							<h4><a href="./sovet.html">Статьи и советы</a></h4>
+							<h4><a href="./contact.html">Контакты</a></h4>
+							<h4><a href="./otzuv.html">Отзывы</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="search-container">
+					<input type="text" class="search-input" placeholder="Поиск..." />
+					<button class="search-button">🔍</button>
+				</div>
+			</div>
+		</div>
+		
+		<main class='container'>
+			<h1>Контакты и обратная связь</h1>
+			<section id="contact-info">
+				<h2>Контактная информация</h2>
+				<p><strong>Адрес:</strong> г. Бишкек, ул. Ленина, 123</p>
+				<p><strong>Телефон:</strong> +996 (555) 123-456</p>
+				<p><strong>Email:</strong> info@example.com</p>
+			</section>
+			<section id="feedback-form">
+				<h2>Форма обратной связи</h2>
+				<form action="submit.php" method="POST">
+					<label for="name">Ваше имя:</label>
+					<input type="text" id="name" name="name" required />
+					<label for="email">Ваш Email:</label>
+					<input type="email" id="email" name="email" required />
+					<label for="message">Сообщение:</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+					<button type="submit">Отправить</button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2024 Путеводители и инструкторы</p>
+		</footer>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<script src="./app.js"></script>
+	</body>
+</html>
